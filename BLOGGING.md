@@ -88,6 +88,28 @@ Click **Commit changes**. The post goes live in a minute or two and shows up on 
 
 To save a draft without publishing, put the file in a `_drafts` folder instead (no date needed in the file name).
 
+## Editing a post that's already live
+
+1. Go to the repo on GitHub and open the `_posts` folder.
+2. Click the post's file, then the **pencil icon** (Edit this file) at the top right.
+3. Make your changes. The **Preview** tab shows roughly how the formatting will look.
+4. Click **Commit changes**. The live site updates in a minute or two.
+
+GitHub keeps every version, so nothing is ever lost. To undo a change, open the file, click **History**, and copy back the old text.
+
+### Common tweaks
+
+| To change | Edit |
+| --- | --- |
+| A post's title, summary or tags | The lines between the `---` at the top of the post |
+| The publish date | The date in the file name (renaming the file changes the date) |
+| An image | Upload the new image to `assets/img/blog/` with the same file name, or point the post at the new name |
+| Hide a post without deleting it | Add `published: false` to the lines at the top |
+| Delete a post | Open the file, click the **…** menu, then **Delete file** |
+| The chart numbers in the Shrek post | `_data/shrek_box_office.yml` |
+| The blog page heading ("Notes on content that grows") | `blog/index.html` |
+| The "Want help with your content?" box under every post | `_layouts/post.html` |
+
 ## Example
 
 `_posts/2026-10-02-what-shrek-taught-me-about-ai-and-content.md` is a full post with lists, links, a table, a LinkedIn embed and images. Open it to see how everything is written.

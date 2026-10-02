@@ -23,7 +23,7 @@ I've been on my own journey with AI, and I'm not saying that it has no place in 
 - *Write high-converting emails 10x faster*
 - *Increase AI visibility by 2000000001%*
 
-<div class="img-placeholder">Image coming soon: AI tool promises collage<br>(assets/img/blog/ai-content-promises.png)</div>
+{% include image.html src="/assets/img/blog/ai-content-promises.webp" alt="Ads from AI writing tools promising 4x output for a quarter of the cost, emails 10x faster, and SEO articles in under 5 minutes" %}
 
 But that advice, and the promises that tools sell, conveniently skip the fact that regardless of how *fast* you can produce content, if it's bad, it's doing you more harm than good for two reasons:
 
@@ -53,11 +53,11 @@ Objectively, Shrek is one of the greatest movies ever made. The only other accep
 
 And to prove how serious I am, here's my latest Halloween costume:
 
-<div class="img-placeholder">Image coming soon: Lord Farquaad Halloween costume<br>(assets/img/blog/lord-farquaad-halloween.png)</div>
+{% include image.html src="/assets/img/blog/lord-farquaad-halloween.webp" alt="Hiba and her friend Emily dressed as Lord Farquaad for Halloween" %}
 
 **Here's the thing about Shrek though: it wasn't a fluke. It was different. It was weird. It had personality leaking out of every frame.**
 
-<div class="img-placeholder">Image coming soon: Big Bad Wolf reading Pork Illustrated<br>(assets/img/blog/big-bad-wolf-pork-illustrated.jpg)</div>
+{% include image.html src="/assets/img/blog/big-bad-wolf-pork-illustrated.webp" alt="The Big Bad Wolf from Shrek in pink pyjamas reading Pork Illustrated in bed" %}
 
 Shrek didn't follow the Disney princess playbook. It subverted it. And *that's* why it resonated. That's why it made $484M at the box office and launched a franchise that's still culturally alive today. In an equally (if not more) weird way too…
 
@@ -65,13 +65,13 @@ Shrek didn't follow the Disney princess playbook. It subverted it. And *that's* 
 - [Shrek burlesque](https://www.swamplesque.com/)
 - [Even as a romantasy book](https://www.goodreads.com/book/show/199313243-get-in-my-swamp). No, I have not read it (yet 👀)
 
-<div class="img-placeholder">Image coming soon: Shrek rave, burlesque and romantasy collage<br>(assets/img/blog/shrek-culture-collage.png)</div>
+{% include image.html src="/assets/img/blog/shrek-culture-collage.webp" alt="A Shrek Rave tour poster, a burlesque performer in a Gingerbread Man mask, and the cover of the ogre romance novel Get in My Swamp" %}
 
 Now think about your content. Is it Shrek? Or is it a generic fairy tale that blends into the kingdom?
 
 Generic content isn't a new problem. Before AI, we were already recycling the same SEO frameworks, the same headline formulas, the same "5 tips to [thing]" structures. AI didn't create the bland content problem. It just made it exponentially worse.
 
-<div class="img-placeholder">Image coming soon: identical "best email marketing" search results<br>(assets/img/blog/generic-search-results.png)</div>
+{% include image.html src="/assets/img/blog/generic-search-results.webp" alt="Four Google results from different sites, all titled some version of &quot;Best Free Email Marketing Services for 2025&quot;" %}
 
 If we all run the same machine to produce content at scale, we end up in a sea of content that looks, sounds, and feels identical. Content marketers become listicle generators.
 

@@ -34,7 +34,7 @@ It's built with Jekyll, which GitHub Pages runs automatically, so there's nothin
 - [x] Headshot
 - [ ] Real stats (placeholders marked `TODO` in the Results section)
 - [ ] Real testimonials (placeholders marked `TODO` in the Testimonials section)
-- [ ] Remaining images for the Shrek post (spots marked `img-placeholder`)
+- [ ] Shrek meme image for the Shrek post (spot marked `img-placeholder`)
 - [ ] Custom domain (optional)
 
 ## Preview locally (optional)
