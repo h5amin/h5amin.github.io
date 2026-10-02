@@ -1,7 +1,7 @@
 // Paste your booking link (Calendly, SavvyCal, etc.) between the quotes.
 // Every "Book a call" button on the page will use it.
-// While it's empty, those buttons go to your LinkedIn profile instead.
-const BOOKING_URL = "";
+// If you empty it, those buttons go to your LinkedIn profile instead.
+const BOOKING_URL = "https://app.reclaim.ai/m/hiba-amin/connect";
 const FALLBACK_URL = "https://www.linkedin.com/in/hibaamin/";
 
 document.querySelectorAll("[data-book]").forEach((link) => {

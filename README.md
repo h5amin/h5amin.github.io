@@ -22,7 +22,7 @@ It's a plain HTML/CSS site with no build step. GitHub Pages serves it at https:/
 
 ## Still to do
 
-- [ ] Booking link (`BOOKING_URL` in `main.js`)
+- [x] Booking link (`BOOKING_URL` in `main.js`)
 - [ ] Headshot
 - [ ] Testimonials (spot marked `TODO` in the Results section)
 - [ ] Double-check the stats in the Results section
