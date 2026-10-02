@@ -1,0 +1,27 @@
+{% comment %} Bar chart for the Shrek post. Numbers live in _data/shrek_box_office.yml {% endcomment %}
+{% assign max = 1000 %}
+<figure class="bar-chart">
+  <figcaption>
+    <p class="bar-chart-title">The Shrek franchise by the numbers</p>
+    <p class="bar-chart-sub">First-year gross revenue vs. budget. Every single film made a profit.</p>
+  </figcaption>
+  <div class="bar-legend" aria-hidden="true">
+    <span><i class="swatch swatch-revenue"></i>Gross revenue</span>
+    <span><i class="swatch swatch-budget"></i>Budget</span>
+  </div>
+  <ul class="bar-rows">
+    {% for f in site.data.shrek_box_office %}
+    <li>
+      <span class="bar-label">{{ f.film }}</span>
+      <span class="bar-line">
+        <span class="bar bar-revenue" style="width: {{ f.revenue | times: 100.0 | divided_by: max }}%"></span>
+        <span class="bar-value"><span class="sr-only">Gross revenue </span>${{ f.revenue }}M</span>
+      </span>
+      <span class="bar-line">
+        <span class="bar bar-budget" style="width: {{ f.budget | times: 100.0 | divided_by: max }}%"></span>
+        <span class="bar-value"><span class="sr-only">Budget </span>${{ f.budget }}M</span>
+      </span>
+    </li>
+    {% endfor %}
+  </ul>
+</figure>

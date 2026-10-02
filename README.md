@@ -12,6 +12,7 @@ It's built with Jekyll, which GitHub Pages runs automatically, so there's nothin
 | `_posts/` | Blog posts, one Markdown file each. See **[BLOGGING.md](BLOGGING.md)** |
 | `blog/index.html` | The blog listing page |
 | `_config.yml` | Site name, booking link and social links |
+| `_data/` | Chart numbers (e.g. `shrek_box_office.yml` for the Shrek post chart) |
 | `_includes/` | Header, footer, blog card and image-with-caption snippets shared by every page |
 | `_layouts/` | Page templates (`default` for every page, `post` for blog posts) |
 | `assets/css/styles.css` | Colours, fonts and layout. Colours are at the top under `:root` |

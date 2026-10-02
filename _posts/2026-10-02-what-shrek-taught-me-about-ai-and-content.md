@@ -93,13 +93,7 @@ What it *can* do is spin up a very charming, very useful sidekick. Once you've d
 
 Shrek 1 made $484M. The success of this movie set the foundation for Shrek 2 to be the most successful movie of the bunch, hitting about $928 million. After Shrek 2, each sequential movie made a little less than the one before. **But here's the thing: they were all still wildly profitable.**
 
-| Movie | Year | Worldwide box office |
-| --- | --- | --- |
-| Shrek | 2001 | ~$484M |
-| Shrek 2 | 2004 | ~$928M |
-| Shrek the Third | 2007 | ~$813M |
-| Shrek Forever After | 2010 | ~$753M |
-| Puss in Boots | 2011 | ~$555M |
+{% include shrek-chart.html %}
 
 The franchise kept printing money because the foundation was so strong that even the spin-offs had gravity.
 

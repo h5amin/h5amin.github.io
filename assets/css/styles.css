@@ -661,6 +661,44 @@ p { margin: 0 0 1em; }
   text-align: center;
 }
 
+/* Bar chart (used in the Shrek post) */
+.bar-chart {
+  margin: 2em 0;
+  padding: 28px 28px 24px;
+  background: var(--plum);
+  color: var(--cream);
+  border-radius: var(--radius);
+  line-height: 1.4;
+}
+.bar-chart figcaption { margin-bottom: 16px; }
+.bar-chart-title {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-variation-settings: "SOFT" 100, "WONK" 1;
+  font-size: 1.5rem;
+  color: var(--sunflower);
+  margin: 0 0 4px !important;
+}
+.bar-chart-sub { font-size: 0.95rem; opacity: 0.85; margin: 0 !important; }
+.bar-legend { display: flex; flex-wrap: wrap; gap: 20px; font-size: 0.9rem; margin-bottom: 20px; }
+.bar-legend span { display: inline-flex; align-items: center; gap: 8px; }
+.swatch { display: inline-block; width: 14px; height: 14px; border-radius: 4px; }
+.swatch-revenue, .bar-revenue { background: var(--sunflower); }
+.swatch-budget, .bar-budget { background: var(--mint); }
+.bar-rows { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; }
+.bar-rows li { margin: 0 !important; }
+.bar-rows li::marker { content: none; }
+.bar-label { display: block; font-weight: 700; font-size: 0.95rem; margin-bottom: 4px; }
+.bar-line { display: flex; align-items: center; gap: 10px; margin-top: 4px; }
+.bar { display: block; height: 18px; border-radius: 0 999px 999px 0; min-width: 4px; }
+.bar-revenue { height: 22px; }
+.bar-value { font-size: 0.85rem; font-weight: 700; white-space: nowrap; }
+
+@media (max-width: 480px) {
+  .bar-chart { padding: 20px 16px; }
+  .bar-chart-title { font-size: 1.25rem; }
+}
+
 /* Tables */
 .table-wrap {
   overflow-x: auto;

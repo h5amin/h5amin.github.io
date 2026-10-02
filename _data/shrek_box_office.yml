@@ -1,0 +1,20 @@
+# Numbers for the chart in the Shrek blog post (in millions of US dollars).
+# Edit a number here and the chart updates.
+- film: Shrek
+  revenue: 484
+  budget: 60
+- film: Shrek 2
+  revenue: 920
+  budget: 150
+- film: Shrek the Third
+  revenue: 799
+  budget: 160
+- film: Shrek Forever After
+  revenue: 752
+  budget: 135
+- film: Puss in Boots
+  revenue: 555
+  budget: 130
+- film: "Puss in Boots: The Last Wish"
+  revenue: 485
+  budget: 90
