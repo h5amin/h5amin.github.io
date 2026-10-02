@@ -72,9 +72,15 @@ With a caption (and optionally `wide=true` to make it bigger than the text colum
 
 Keep images under about 500 KB so pages load quickly. Always describe the image in the alt text for screen readers.
 
-### Videos
+### Videos and LinkedIn posts
 
 Paste the embed code from YouTube, Loom, etc. straight into the post. It will resize to fit.
+
+For a LinkedIn post, copy its embed code (the **…** menu on the post → **Embed this post**) and wrap it like this so it keeps the right shape:
+
+```
+<div class="embed-linkedin"><iframe src="https://www.linkedin.com/embed/feed/update/..." height="433" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe></div>
+```
 
 ## 4. Publish
 
@@ -82,6 +88,6 @@ Click **Commit changes**. The post goes live in a minute or two and shows up on 
 
 To save a draft without publishing, put the file in a `_drafts` folder instead (no date needed in the file name).
 
-## Removing the sample posts
+## Example
 
-Delete the two sample posts in `_posts` (their file names contain `sample`) once you've written your own. Delete `assets/img/blog/sample-content-audit.svg` too.
+`_posts/2026-10-02-what-shrek-taught-me-about-ai-and-content.md` is a full post with lists, links, a table, a LinkedIn embed and images. Open it to see how everything is written.
