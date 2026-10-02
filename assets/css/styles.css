@@ -370,6 +370,7 @@ p { margin: 0 0 1em; }
 .logo-tile:nth-child(4n+1) { background: var(--lilac); }
 .logo-tile:nth-child(4n+2) { background: var(--mint); }
 .logo-tile:nth-child(4n+3) { background: var(--sunflower); }
+.logo-tile img { width: auto; max-width: 170px; }
 
 @keyframes marquee {
   from { transform: translateX(0); }

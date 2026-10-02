@@ -3,21 +3,48 @@ layout: default
 title: Content strategy for scaling tech companies
 description: Hiba Amin Consulting helps early to mid-size B2B and SaaS companies grow with content strategy, fractional content leadership and high-impact content.
 
-# Companies in the scrolling logo strip. Add, remove or reorder names here.
+# Companies in the scrolling logo strip. Add, remove or reorder them here.
+# "logo" is a file in assets/img/logos/ and "height" is its display height in pixels.
+# Leave out "logo" to show the name as text instead.
 companies:
-  - Balsamiq
-  - Swoogo
-  - Hypercontext
-  - YouCanBookMe
-  - Capacity
-  - Superside
-  - Whimsical
-  - Remote
-  - Growclass
-  - Jelly Academy
-  - Vitally
-  - Polly
-  - Cooth
+  - name: Balsamiq
+    logo: balsamiq.png
+    height: 37
+  - name: Swoogo
+    logo: swoogo.png
+    height: 36
+  - name: Hypercontext
+    logo: hypercontext.png
+    height: 31
+  - name: YouCanBookMe
+    logo: youcanbookme.png
+    height: 40
+  - name: Capacity
+    logo: capacity.png
+    height: 36
+  - name: Superside
+    logo: superside.png
+    height: 34
+  - name: Whimsical
+    logo: whimsical.png
+    height: 27
+  - name: Remote
+  - name: Growclass
+    logo: growclass.png
+    height: 35
+  - name: Jelly Academy
+    logo: jelly-academy.png
+    height: 41
+  - name: Vitally
+    logo: vitally.png
+    height: 39
+  - name: Polly
+  - name: Cooth
+    logo: cooth.png
+    height: 45
+  - name: Copy.ai
+    logo: copy-ai.png
+    height: 42
 ---
 
     <!-- ===== HERO ===== -->
@@ -120,7 +147,13 @@ companies:
             {% for pass in (1..2) %}
             <ul class="logo-row"{% if pass == 2 %} aria-hidden="true"{% endif %}>
               {% for company in page.companies %}
-              <li class="logo-tile">{{ company }}</li>
+              <li class="logo-tile">
+                {% if company.logo %}
+                <img src="{{ '/assets/img/logos/' | append: company.logo | relative_url }}" alt="{{ company.name }}" style="height: {{ company.height }}px">
+                {% else %}
+                {{ company.name }}
+                {% endif %}
+              </li>
               {% endfor %}
             </ul>
             {% endfor %}
