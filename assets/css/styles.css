@@ -353,6 +353,50 @@ p { margin: 0 0 1em; }
   .stat-grid { grid-template-columns: 1fr; max-width: 520px; margin-left: auto; margin-right: auto; }
 }
 
+/* ---------- Testimonials ---------- */
+
+.testimonials {
+  background: var(--plum);
+  padding: 96px 0;
+}
+
+.quote-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-top: 48px;
+}
+
+.quote-card {
+  margin: 0;
+  border-radius: var(--radius);
+  padding: 32px 32px 36px;
+  display: flex; flex-direction: column;
+}
+.quote-card blockquote { margin: 0 0 24px; flex: 1; font-size: 1.1rem; }
+.quote-card blockquote p { margin: 0; }
+.quote-card figcaption strong {
+  display: block;
+  font-family: var(--font-display);
+  font-variation-settings: "SOFT" 100, "WONK" 1;
+  font-size: 1.25rem;
+}
+.quote-card figcaption span { font-size: 0.95rem; }
+
+.quote-mark {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 5rem;
+  line-height: 0.8;
+  height: 0.55em;
+  color: var(--tangerine);
+  -webkit-text-stroke: 2px var(--plum);
+}
+
+@media (max-width: 900px) {
+  .quote-grid { grid-template-columns: 1fr; max-width: 560px; margin-left: auto; margin-right: auto; }
+}
+
 /* ---------- About ---------- */
 
 .about {
