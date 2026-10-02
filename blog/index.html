@@ -1,0 +1,26 @@
+---
+layout: default
+title: Blog
+description: Thoughts on content strategy, content leadership and growing B2B and SaaS brands, from Hiba Amin.
+---
+<section class="blog-hero">
+  <div class="container">
+    <p class="eyebrow">The blog</p>
+    <h1>Notes on content that <em>grows.</em></h1>
+    <p class="lede">Strategy, systems and honest takes on content for scaling tech teams.</p>
+  </div>
+</section>
+
+<section class="blog-list">
+  <div class="container">
+    {% if site.posts.size > 0 %}
+    <div class="post-grid">
+      {% for post in site.posts %}
+        {% include post-card.html post=post index=forloop.index %}
+      {% endfor %}
+    </div>
+    {% else %}
+    <p class="center">Posts are on the way. Check back soon!</p>
+    {% endif %}
+  </div>
+</section>

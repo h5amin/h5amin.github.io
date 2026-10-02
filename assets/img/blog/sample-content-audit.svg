@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#3B1D4F"/>
+  <rect x="90" y="110" width="320" height="410" rx="160" fill="#D7BFFF"/>
+  <rect x="450" y="150" width="320" height="370" rx="40" fill="#B9EFD5"/>
+  <rect x="810" y="190" width="300" height="330" rx="70" fill="#FFC93C"/>
+  <g fill="#3B1D4F">
+    <rect x="150" y="300" width="200" height="22" rx="11"/>
+    <rect x="150" y="345" width="150" height="22" rx="11"/>
+    <rect x="510" y="250" width="200" height="22" rx="11"/>
+    <rect x="510" y="295" width="160" height="22" rx="11"/>
+    <rect x="870" y="290" width="180" height="22" rx="11"/>
+    <rect x="870" y="335" width="120" height="22" rx="11"/>
+  </g>
+  <path d="M1080 60 C1084 94 1092 102 1126 106 C1092 110 1084 118 1080 152 C1076 118 1068 110 1034 106 C1068 102 1076 94 1080 60Z" fill="#FFC93C" stroke="#FFF4E2" stroke-width="3"/>
+  <text x="600" y="590" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" fill="#FFF4E2">Placeholder image: swap in your own</text>
+</svg>

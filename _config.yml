@@ -1,0 +1,49 @@
+# Site settings. After editing this file, changes can take a minute or two to appear.
+
+title: Hiba Amin Consulting
+description: Content strategy, fractional Head of Content and content execution for scaling B2B and SaaS companies.
+url: https://h5amin.github.io
+baseurl: ""
+lang: en
+
+# Every "Book a call" button uses this link.
+booking_url: https://app.reclaim.ai/m/hiba-amin/connect
+linkedin_url: https://www.linkedin.com/in/hibaamin/
+x_url: https://x.com/h5amin
+
+# Used when pages are shared on LinkedIn, X, Slack, etc.
+author: Hiba Amin
+image: /assets/img/headshot.jpg
+social:
+  name: Hiba Amin
+  links:
+    - https://www.linkedin.com/in/hibaamin/
+    - https://x.com/h5amin
+
+# Blog post web addresses look like /blog/my-post-title/
+permalink: /blog/:title/
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+feed:
+  path: blog/feed.xml
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+exclude:
+  - README.md
+  - BLOGGING.md
+  - Gemfile
+  - Gemfile.lock

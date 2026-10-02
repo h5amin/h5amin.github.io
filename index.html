@@ -1,49 +1,8 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hiba Amin Consulting | Content strategy for scaling tech companies</title>
-  <meta name="description" content="Hiba Amin Consulting helps early to mid-size B2B and SaaS companies grow with content strategy, fractional content leadership and high-impact content.">
-
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Hiba Amin Consulting">
-  <meta property="og:description" content="Content strategy, fractional Head of Content and content execution for scaling tech companies.">
-  <meta property="og:url" content="https://h5amin.github.io/">
-  <meta name="theme-color" content="#3B1D4F">
-
-  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400..700&family=Fraunces:opsz,wght,SOFT,WONK@9..144,400..900,0..100,0..1&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
-
-  <!-- ===== HEADER / NAV ===== -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="wordmark" href="#top">Hiba Amin <span>Consulting</span></a>
-
-      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
-        <span class="sr-only">Menu</span>
-        <span class="nav-toggle-bar"></span>
-      </button>
-
-      <nav id="site-nav" class="site-nav" aria-label="Main">
-        <a href="#services">Services</a>
-        <a href="#results">Results</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-        <a class="btn btn-small" href="https://app.reclaim.ai/m/hiba-amin/connect" data-book>Book a call</a>
-      </nav>
-    </div>
-  </header>
-
-  <main id="main">
+---
+layout: default
+title: Content strategy for scaling tech companies
+description: Hiba Amin Consulting helps early to mid-size B2B and SaaS companies grow with content strategy, fractional content leadership and high-impact content.
+---
 
     <!-- ===== HERO ===== -->
     <section class="hero" id="top">
@@ -52,7 +11,7 @@
         <h1>Content that helps scaling tech companies <em>grow.</em></h1>
         <p class="lede">I help early to mid-size B2B and SaaS teams turn strategy into content that pulls the right people in and keeps them coming back.</p>
         <div class="hero-actions">
-          <a class="btn" href="https://app.reclaim.ai/m/hiba-amin/connect" data-book>Book a call</a>
+          <a class="btn" href="{{ site.booking_url }}" data-book>Book a call</a>
           <a class="btn btn-ghost" href="#services">See services</a>
         </div>
       </div>
@@ -109,7 +68,7 @@
         </div>
 
         <div class="center">
-          <a class="btn" href="https://app.reclaim.ai/m/hiba-amin/connect" data-book>Let's talk about your goals</a>
+          <a class="btn" href="{{ site.booking_url }}" data-book>Let's talk about your goals</a>
         </div>
       </div>
     </section>
@@ -183,7 +142,7 @@
     <section class="about" id="about">
       <div class="container about-inner">
         <div class="about-photo">
-          <img src="assets/img/headshot.jpg" alt="Hiba Amin smiling in a pink beanie in front of a snowy mountain at sunset" width="800" height="1000" loading="lazy">
+          <img src="{{ '/assets/img/headshot.jpg' | relative_url }}" alt="Hiba Amin smiling in a pink beanie in front of a snowy mountain at sunset" width="800" height="1000" loading="lazy">
         </div>
         <div class="about-copy">
           <h2 class="section-title">Hi, I'm Hiba 👋</h2>
@@ -226,32 +185,32 @@
       </div>
     </section>
 
+    <!-- ===== LATEST FROM THE BLOG (shows your 3 newest posts automatically) ===== -->
+    {% if site.posts.size > 0 %}
+    <section class="latest" aria-labelledby="latest-title">
+      <div class="container">
+        <h2 class="section-title" id="latest-title">Fresh from the blog</h2>
+        <div class="post-grid">
+          {% for post in site.posts limit: 3 %}
+            {% include post-card.html post=post index=forloop.index %}
+          {% endfor %}
+        </div>
+        <div class="center">
+          <a class="btn btn-ghost" href="{{ '/blog/' | relative_url }}">Read the blog</a>
+        </div>
+      </div>
+    </section>
+    {% endif %}
+
     <!-- ===== CONTACT CTA ===== -->
     <section class="contact" id="contact">
       <div class="container contact-inner">
         <h2>Let's talk about your content.</h2>
         <p>Tell me what you're working on. I'll tell you honestly how I can help.</p>
         <div class="hero-actions">
-          <a class="btn" href="https://app.reclaim.ai/m/hiba-amin/connect" data-book>Book a call</a>
+          <a class="btn" href="{{ site.booking_url }}" data-book>Book a call</a>
           <a class="btn btn-ghost-light" href="https://www.linkedin.com/in/hibaamin/">Connect on LinkedIn</a>
         </div>
       </div>
       <svg class="doodle doodle-sparkle doodle-contact" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 4 C54 38 62 46 96 50 C62 54 54 62 50 96 C46 62 38 54 4 50 C38 46 46 38 50 4Z" /></svg>
     </section>
-
-  </main>
-
-  <!-- ===== FOOTER ===== -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>&copy; <span id="year">2026</span> Hiba Amin Consulting</p>
-      <ul>
-        <li><a href="https://www.linkedin.com/in/hibaamin/">LinkedIn</a></li>
-        <li><a href="https://x.com/h5amin">X</a></li>
-      </ul>
-    </div>
-  </footer>
-
-  <script src="assets/js/main.js"></script>
-</body>
-</html>

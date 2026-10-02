@@ -1,0 +1,9 @@
+{% comment %}
+  Image with an optional caption. Use it in a post like this:
+  {% include image.html src="/assets/img/blog/my-image.png" alt="What the image shows" caption="Optional caption" %}
+  Add wide=true to let the image stretch wider than the text.
+{% endcomment %}
+<figure class="post-figure{% if include.wide %} is-wide{% endif %}">
+  <img src="{{ include.src | relative_url }}" alt="{{ include.alt }}" loading="lazy">
+  {% if include.caption %}<figcaption>{{ include.caption | markdownify | remove: '<p>' | remove: '</p>' }}</figcaption>{% endif %}
+</figure>

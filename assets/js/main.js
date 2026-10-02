@@ -1,11 +1,6 @@
-// Paste your booking link (Calendly, SavvyCal, etc.) between the quotes.
-// Every "Book a call" button on the page will use it.
-// If you empty it, those buttons go to your LinkedIn profile instead.
-const BOOKING_URL = "https://app.reclaim.ai/m/hiba-amin/connect";
-const FALLBACK_URL = "https://www.linkedin.com/in/hibaamin/";
-
+// "Book a call" buttons open in a new tab.
+// The link itself lives in _config.yml (booking_url).
 document.querySelectorAll("[data-book]").forEach((link) => {
-  link.href = BOOKING_URL || FALLBACK_URL;
   link.target = "_blank";
   link.rel = "noopener";
 });
@@ -27,5 +22,10 @@ nav.querySelectorAll("a").forEach((link) => {
   });
 });
 
-// Footer year
-document.getElementById("year").textContent = new Date().getFullYear();
+// Let wide blog tables scroll sideways on phones instead of squashing.
+document.querySelectorAll(".prose table").forEach((table) => {
+  const wrap = document.createElement("div");
+  wrap.className = "table-wrap";
+  table.parentNode.insertBefore(wrap, table);
+  wrap.appendChild(table);
+});
