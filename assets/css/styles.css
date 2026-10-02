@@ -694,6 +694,31 @@ p { margin: 0 0 1em; }
 .bar-revenue { height: 22px; }
 .bar-value { font-size: 0.85rem; font-weight: 700; white-space: nowrap; }
 
+/* Chart animation: bars grow in one after another when scrolled into view.
+   JavaScript adds .is-animated, so without it the chart simply shows. */
+.bar-chart.is-animated .bar {
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.9s cubic-bezier(0.34, 1.15, 0.64, 1);
+  transition-delay: var(--delay, 0ms);
+}
+.bar-chart.is-animated .is-budget .bar { transition-delay: calc(var(--delay, 0ms) + 180ms); }
+.bar-chart.is-animated .bar-value {
+  opacity: 0;
+  transform: translateX(-6px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  transition-delay: calc(var(--delay, 0ms) + 600ms);
+}
+.bar-chart.is-animated .is-budget .bar-value { transition-delay: calc(var(--delay, 0ms) + 780ms); }
+.bar-chart.is-animated.in-view .bar { transform: scaleX(1); }
+.bar-chart.is-animated.in-view .bar-value { opacity: 1; transform: none; }
+
+/* Hover a film to highlight it */
+.bar-rows li { transition: opacity 0.2s ease; }
+.bar-rows:hover li { opacity: 0.45; }
+.bar-rows li:hover { opacity: 1; }
+.bar-rows li:hover .bar { filter: brightness(1.08); }
+
 @media (max-width: 480px) {
   .bar-chart { padding: 20px 16px; }
   .bar-chart-title { font-size: 1.25rem; }
@@ -730,4 +755,5 @@ p { margin: 0 0 1em; }
   html { scroll-behavior: auto; }
   .btn, .site-nav a, .post-card { transition: none; }
   .btn:hover, .post-card:hover { transform: none; }
+  .bar-rows li { transition: none; }
 }

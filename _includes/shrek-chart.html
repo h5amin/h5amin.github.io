@@ -11,15 +11,15 @@
   </div>
   <ul class="bar-rows">
     {% for f in site.data.shrek_box_office %}
-    <li>
+    <li style="--delay: {{ forloop.index0 | times: 140 }}ms">
       <span class="bar-label">{{ f.film }}</span>
       <span class="bar-line">
         <span class="bar bar-revenue" style="width: {{ f.revenue | times: 100.0 | divided_by: max }}%"></span>
-        <span class="bar-value"><span class="sr-only">Gross revenue </span>${{ f.revenue }}M</span>
+        <span class="bar-value"><span class="sr-only">Gross revenue </span>$<span data-count="{{ f.revenue }}">{{ f.revenue }}</span>M</span>
       </span>
-      <span class="bar-line">
+      <span class="bar-line is-budget">
         <span class="bar bar-budget" style="width: {{ f.budget | times: 100.0 | divided_by: max }}%"></span>
-        <span class="bar-value"><span class="sr-only">Budget </span>${{ f.budget }}M</span>
+        <span class="bar-value"><span class="sr-only">Budget </span>$<span data-count="{{ f.budget }}">{{ f.budget }}</span>M</span>
       </span>
     </li>
     {% endfor %}
