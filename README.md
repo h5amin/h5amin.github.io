@@ -22,6 +22,7 @@ It's built with Jekyll, which GitHub Pages runs automatically, so there's nothin
 ## Common edits
 
 - **Write a blog post:** see [BLOGGING.md](BLOGGING.md).
+- **Add or remove companies in the logo strip:** edit the `companies` list at the top of `index.html`.
 - **Change homepage text:** open `index.html`, find the section comment, edit the words between the tags.
 - **Change your booking link or social links:** edit `_config.yml`.
 - **Rename a menu item:** edit `_includes/header.html` (the blog link is labelled "thonks").

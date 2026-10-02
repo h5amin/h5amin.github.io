@@ -2,6 +2,22 @@
 layout: default
 title: Content strategy for scaling tech companies
 description: Hiba Amin Consulting helps early to mid-size B2B and SaaS companies grow with content strategy, fractional content leadership and high-impact content.
+
+# Companies in the scrolling logo strip. Add, remove or reorder names here.
+companies:
+  - Balsamiq
+  - Swoogo
+  - Hypercontext
+  - YouCanBookMe
+  - Capacity
+  - Superside
+  - Whimsical
+  - Remote
+  - Growclass
+  - Jelly Academy
+  - Vitally
+  - Polly
+  - Cooth
 ---
 
     <!-- ===== HERO ===== -->
@@ -94,21 +110,21 @@ description: Hiba Amin Consulting helps early to mid-size B2B and SaaS companies
           </div>
         </div>
 
-        <div class="logos">
-          <p class="logos-label">Companies I've worked with</p>
-          <ul class="logo-row">
-            <li>Balsamiq</li>
-            <li>Swoogo</li>
-            <li>Hypercontext</li>
-            <li>YouCanBookMe</li>
-            <li>Capacity</li>
-            <li>Superside</li>
-            <li>Whimsical</li>
-            <li>Remote</li>
-            <li>Growclass</li>
-            <li>Jelly Academy</li>
-            <li>Vitally</li>
-          </ul>
+      </div>
+
+      <!-- Scrolling logo strip. The names come from "companies" at the top of this file. -->
+      <div class="logos">
+        <p class="logos-label">Companies I've worked with</p>
+        <div class="marquee">
+          <div class="marquee-track">
+            {% for pass in (1..2) %}
+            <ul class="logo-row"{% if pass == 2 %} aria-hidden="true"{% endif %}>
+              {% for company in page.companies %}
+              <li class="logo-tile">{{ company }}</li>
+              {% endfor %}
+            </ul>
+            {% endfor %}
+          </div>
         </div>
       </div>
     </section>
