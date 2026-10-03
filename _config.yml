@@ -9,7 +9,6 @@ lang: en
 # Every "Book a call" button uses this link.
 booking_url: https://app.reclaim.ai/m/hiba-amin/connect
 linkedin_url: https://www.linkedin.com/in/hibaamin/
-x_url: https://x.com/h5amin
 
 # Used when pages are shared on LinkedIn, X, Slack, etc.
 author: Hiba Amin
@@ -18,7 +17,6 @@ social:
   name: Hiba Amin
   links:
     - https://www.linkedin.com/in/hibaamin/
-    - https://x.com/h5amin
 
 # Blog post web addresses look like /blog/my-post-title/
 permalink: /blog/:title/
