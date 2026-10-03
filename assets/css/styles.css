@@ -160,7 +160,7 @@ p { margin: 0 0 1em; }
 .nav-toggle-bar::before { top: -7px; }
 .nav-toggle-bar::after { top: 7px; }
 
-@media (max-width: 1040px) {
+@media (max-width: 600px) {
   .nav-toggle { display: block; }
   .site-nav {
     display: none;
