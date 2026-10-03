@@ -13,6 +13,7 @@
       <a href="{{ home }}#services">Services</a>
       <a href="{{ home }}#results">Results</a>
       <a href="{{ home }}#about">About</a>
+      <a href="{{ '/work/' | relative_url }}"{% if page.url contains '/work/' %} aria-current="page"{% endif %}>Work</a>
       <a href="{{ '/blog/' | relative_url }}"{% if page.url contains '/blog/' %} aria-current="page"{% endif %}>thonks</a>
       <a href="{{ home }}#contact">Contact</a>
       <a class="btn btn-small" href="{{ site.booking_url }}" data-book>Book a call</a>

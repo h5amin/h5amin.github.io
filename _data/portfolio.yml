@@ -1,0 +1,109 @@
+# Content portfolio shown on the Work page (/work/).
+# Each group has a heading and a list of projects. For each project:
+#   company, title, url (main link), summary (one or two sentences),
+#   result (optional, the headline outcome), links (optional extra links).
+# Add a new project by copying one and changing the text.
+
+- group: Content reports
+  items:
+    - company: Hypercontext
+      title: 2019 State of One-on-Ones
+      url: https://hypercontext.com/state-of-one-on-ones-report
+      summary: >-
+        An original research report built to put a moat around our content (competitors were copying
+        our pieces almost word for word) and to build authority with our audience, the industry and
+        search. We did the surveying, analysis, design, writing, outreach and web build ourselves, on a
+        content budget of basically $0.
+      result: Repurposed into blogs, guest posts, social, email and a pile of graphics.
+
+    - company: Hypercontext
+      title: 2022 State of High Performing Teams in Tech
+      url: https://hypercontext.com/state-of-high-performing-teams-in-tech
+      summary: >-
+        The follow-up report, built to move the brand beyond one-on-one meetings toward empowering
+        high-performing teams. We published it as a mobile- and search-friendly web page instead of a
+        PDF.
+      result: Spun off into blogs, guest posts, webinars, social, email and team-specific reports.
+      links:
+        - label: Engineering edition
+          url: https://hypercontext.com/state-of-high-performing-engineering-teams
+        - label: Sales edition
+          url: https://hypercontext.com/the-state-of-high-performing-sales-teams
+
+    - company: Glide
+      title: AI Report 2025
+      url: https://www.glideapps.com/ai-report-2025
+
+- group: Template libraries
+  items:
+    - company: Hypercontext
+      title: Goal Examples and Agenda Templates libraries
+      url: https://hypercontext.com/goal-examples
+      summary: >-
+        My bread and butter at Hypercontext. These libraries were the leading pages for turning visitors
+        into paying customers, and the leadership community we were building loved them.
+      result: 30% of weekly website signups came from the libraries and the content repurposed from them.
+      links:
+        - label: Agenda templates
+          url: https://hypercontext.com/agenda-templates
+        - label: Podcast episode on how we built it
+          url: https://marketersindemand.com/?episode=building-a-template-library-that-drives-over-30-of-acquisition-with-hiba-amin
+        - label: Product Hunt launch (our best yet)
+          url: https://www.producthunt.com/products/meeting-question-generator#180-okr-examples-directory
+
+- group: Launches and events
+  items:
+    - company: Hypercontext
+      title: Impromptu Leadership Summit
+      url: https://hypercontext.com/blog/modern-manager-community/impromptu-leadership-summit
+      summary: >-
+        To build hype for our rebrand from Soapbox to Hypercontext, I ideated and ran a day-long
+        leadership summit across webinars and Twitter Spaces in about 10 days: recruiting speakers
+        (almost all through Twitter), shaping talk tracks and panels, and building the sign-up pages.
+      result: Got people talking about the new name, alongside a Product Hunt launch and customer comms.
+      links:
+        - label: Rebrand Product Hunt launch
+          url: https://www.producthunt.com/products/hypercontext
+
+    - company: TestBox
+      title: Marketing Automation category launch
+      url: https://www.linkedin.com/pulse/productproduct-hunt-launch-playbook-5-steps-land-top-3-hiba-amin/
+      summary: >-
+        Launched Marketing Automation as a new category at the same time as a brand-new website, then
+        wrote up the playbook so others could use it.
+
+- group: Video
+  items:
+    - company: Copy.ai
+      title: Prompt School
+      url: https://www.youtube.com/watch?v=cPf251bDKY0
+      summary: >-
+        A first step toward closing the education gap in Copy.ai's marketing mix. The team was sharing
+        incredible prompting advice internally, so we turned it into a video series for everyone.
+      links:
+        - label: Read the blog version
+          url: https://www.copy.ai/blog/ai-prompt-writing
+        - label: Copy.ai 101 series
+          url: https://www.youtube.com/watch?v=gmlGzEWG31I&list=PLrnKV5j0g2XBs1ZnkVZbfdl2cjGa_o7fE
+
+- group: Blog posts
+  items:
+    - company: Copy.ai
+      title: 15 AI Prompts to Supercharge Sales & Marketing Teams
+      url: https://www.copy.ai/blog/sales-marketing-ai-prompts
+      summary: A strong acquisition piece for accounts created.
+      result: The most-read piece of the year on The Juice, the content distribution platform we partnered with.
+
+    - company: Hypercontext
+      title: 9 one-on-one meeting templates
+      url: https://hypercontext.com/blog/management-skills/one-on-one-meeting-templates
+      summary: A product-led piece repurposing content from the template library.
+      result: Our highest-converting blog post, from visitor to account created to Pro upgrade.
+
+    - company: Hypercontext
+      title: Leading your team through a crisis
+      url: https://hypercontext.com/blog/employee-motivation/managing-in-a-crisis
+      summary: >-
+        Written from the heart at the start of COVID, right after we'd laid off half the company. While
+        everyone else rushed out remote-work best practices, I wanted to bring a dose of reality.
+      result: Huge positive feedback and a real boost in brand affinity.

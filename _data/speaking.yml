@@ -1,0 +1,36 @@
+# Talks and appearances shown on the Work page (/work/#speaking).
+# talks: type (Keynote, Panel, Speaker, Workshop...), event, year, title (optional), url (optional)
+# appearances: podcasts, interviews and features. kind, title, outlet, url
+
+talks:
+  - type: Keynote
+    event: SocialWest
+    year: 2025
+  - type: Panel
+    event: Toast Summit
+    year: 2025
+    title: "Purpose is Profitable: How Your Values Can Outperform the Market"
+  - type: Speaker
+    event: SocialPacific
+    year: 2024
+  - type: Workshop
+    event: ATB Amplifier program
+    title: How to use AI for social media (responsibly!)
+
+appearances:
+  - kind: Podcast
+    title: Building a template library that drives over 30% of acquisition
+    outlet: Marketers in Demand
+    url: https://marketersindemand.com/?episode=building-a-template-library-that-drives-over-30-of-acquisition-with-hiba-amin
+  - kind: Interview
+    title: Imposter syndrome, authentic content and responsible AI in marketing
+    outlet: Marketing News Canada (live from SocialWest)
+    url: https://marketingnewscanada.com/news-show/hiba-amin-live-from-the-socialwest-vault
+  - kind: Video
+    title: How to use AI for content marketing
+    outlet: YouTube
+    url: https://www.youtube.com/watch?v=n9ny9su5U2c
+  - kind: Feature
+    title: Why you need templates and customer connection
+    outlet: Managing Editor
+    url: https://managingeditor.com/hiba-amin-writes-like-she-texts/

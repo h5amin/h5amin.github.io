@@ -12,7 +12,8 @@ It's built with Jekyll, which GitHub Pages runs automatically, so there's nothin
 | `_posts/` | Blog posts, one Markdown file each. See **[BLOGGING.md](BLOGGING.md)** |
 | `blog/index.html` | The blog listing page |
 | `_config.yml` | Site name, booking link and social links |
-| `_data/` | Chart numbers (e.g. `shrek_box_office.yml` for the Shrek post chart) |
+| `work/index.html` | The Work & speaking page |
+| `_data/` | Lists the site reads from: `portfolio.yml` (Work page projects), `speaking.yml` (talks and podcasts), `shrek_box_office.yml` (Shrek post chart) |
 | `_includes/` | Header, footer, blog card and image-with-caption snippets shared by every page |
 | `_layouts/` | Page templates (`default` for every page, `post` for blog posts) |
 | `assets/css/styles.css` | Colours, fonts and layout. Colours are at the top under `:root` |
@@ -22,6 +23,8 @@ It's built with Jekyll, which GitHub Pages runs automatically, so there's nothin
 ## Common edits
 
 - **Write a blog post:** see [BLOGGING.md](BLOGGING.md).
+- **Add a project to the Work page:** copy an entry in `_data/portfolio.yml` and change the text. New groups get their own heading and jump link automatically.
+- **Add a talk, podcast or interview:** add it to `_data/speaking.yml`.
 - **Add or remove companies in the logo strip:** edit the `companies` list at the top of `index.html`. Logos live in `assets/img/logos/` (plum, trimmed, 180px tall). A company without a logo shows its name as text.
 - **Change homepage text:** open `index.html`, find the section comment, edit the words between the tags.
 - **Change your booking link or social links:** edit `_config.yml`.

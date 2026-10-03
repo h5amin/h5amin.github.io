@@ -1,0 +1,81 @@
+---
+layout: default
+title: Work & speaking
+description: Selected content work, research reports, launches and talks by Hiba Amin.
+---
+{% comment %}
+  The projects come from _data/portfolio.yml and the talks from _data/speaking.yml.
+  Edit those files to add or change anything on this page.
+{% endcomment %}
+{% assign colours = "bg-lilac,bg-mint,bg-sunflower" | split: "," %}
+
+<section class="blog-hero">
+  <div class="container">
+    <p class="eyebrow">Work &amp; speaking</p>
+    <h1>Content that actually <em>moved the needle.</em></h1>
+    <p class="lede">Research reports, template libraries, launches and talks from 10+ years building content programs in tech.</p>
+    <div class="jump-links">
+      {% for g in site.data.portfolio %}<a href="#{{ g.group | slugify }}">{{ g.group }}</a>{% endfor %}
+      <a href="#speaking">Speaking</a>
+    </div>
+  </div>
+</section>
+
+<section class="work">
+  <div class="container">
+    {% for g in site.data.portfolio %}
+    {% assign gi = forloop.index0 %}
+    <div class="work-group" id="{{ g.group | slugify }}">
+      <h2 class="work-group-title">{{ g.group }}</h2>
+      <div class="work-grid">
+        {% for p in g.items %}
+        {% assign ci = forloop.index0 | plus: gi | modulo: 3 %}
+        <article class="work-card {{ colours[ci] }}">
+          <p class="work-company">{{ p.company }}</p>
+          <h3><a href="{{ p.url }}">{{ p.title }}</a></h3>
+          {% if p.summary %}<p>{{ p.summary }}</p>{% endif %}
+          {% if p.result %}<p class="work-result"><span aria-hidden="true">★</span> {{ p.result }}</p>{% endif %}
+          {% if p.links %}
+          <ul class="work-links">
+            {% for l in p.links %}<li><a href="{{ l.url }}">{{ l.label }}</a></li>{% endfor %}
+          </ul>
+          {% endif %}
+        </article>
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="speaking" id="speaking">
+  <div class="container">
+    <h2 class="section-title on-dark">Speaking</h2>
+    <p class="section-intro on-dark">Talks on content, AI and building brands with heart. Want me at your event?</p>
+
+    <ul class="talk-list">
+      {% for t in site.data.speaking.talks %}
+      <li class="talk">
+        <span class="talk-type">{{ t.type }}</span>
+        <span class="talk-event">{% if t.url %}<a href="{{ t.url }}">{{ t.event }}</a>{% else %}{{ t.event }}{% endif %}{% if t.year %} <span class="talk-year">{{ t.year }}</span>{% endif %}</span>
+        {% if t.title %}<span class="talk-title">{{ t.title }}</span>{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+
+    <h3 class="appearances-title">Podcasts, interviews &amp; features</h3>
+    <ul class="appearance-list">
+      {% for a in site.data.speaking.appearances %}
+      <li>
+        <span class="talk-type">{{ a.kind }}</span>
+        <a href="{{ a.url }}">{{ a.title }}</a>
+        <span class="appearance-outlet">{{ a.outlet }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+
+    <div class="center">
+      <a class="btn" href="{{ site.booking_url }}" data-book>Book me to speak</a>
+    </div>
+  </div>
+</section>
