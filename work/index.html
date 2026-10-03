@@ -65,6 +65,23 @@ description: Selected content work, research reports, launches and talks by Hiba
     </div>
     {% endif %}
 
+    {% assign reviews = site.data.speaking.reviews %}
+    {% if reviews %}
+    <div class="reviews">
+      {% if reviews.rating %}
+      <p class="rating"><span class="rating-score">{{ reviews.rating }}</span> <span class="rating-stars" aria-hidden="true">★★★★★</span><span class="rating-note">{{ reviews.rating_note }}</span></p>
+      {% endif %}
+      <div class="quote-bubbles">
+        {% for q in reviews.quotes %}
+        <figure class="bubble">
+          <blockquote><p>&ldquo;{{ q.text }}&rdquo;</p></blockquote>
+          <figcaption>{{ q.source }}</figcaption>
+        </figure>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+
     <ul class="talk-list">
       {% for t in site.data.speaking.talks %}
       <li class="talk">
