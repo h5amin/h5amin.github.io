@@ -761,6 +761,64 @@ p { margin: 0 0 1em; }
   .bar-chart-title { font-size: 1.25rem; }
 }
 
+/* Note at the top of a post (e.g. "Originally published on...") */
+.post-note {
+  background: var(--mint);
+  border: 3px dashed var(--plum);
+  border-radius: 20px;
+  padding: 16px 20px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.post-note p { margin: 0; }
+
+/* Key takeaway box */
+.callout {
+  background: var(--sunflower);
+  border: 3px solid var(--plum);
+  border-radius: 20px;
+  padding: 20px 24px;
+  box-shadow: 6px 6px 0 var(--plum);
+  margin: 1.8em 0 !important;
+}
+.callout > * + * { margin-top: 0.8em; }
+.callout p { margin: 0; }
+
+/* Templates and scripts (emails, call openers) */
+.template {
+  position: relative;
+  background: #fff;
+  border: 3px solid var(--plum);
+  border-radius: 20px;
+  padding: 36px 24px 22px;
+  font-size: 1.02rem;
+  line-height: 1.65;
+}
+.template::before {
+  content: "Template";
+  position: absolute; top: -14px; left: 20px;
+  background: var(--lilac);
+  border: 2px solid var(--plum);
+  border-radius: 999px;
+  padding: 1px 12px;
+  font-size: 0.75rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.template > * + * { margin-top: 0.9em; }
+.template p, .template ul, .template ol { margin: 0; }
+
+/* Short quote with a source, e.g. candidate feedback */
+.prose .testimonial { margin: 1.4em 0; }
+.prose .testimonial blockquote {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.65;
+  font-style: italic;
+  padding: 20px 24px;
+}
+.prose .testimonial figcaption { margin-top: 8px; padding-left: 24px; font-size: 0.9rem; font-weight: 700; }
+
 /* Tables */
 .table-wrap {
   overflow-x: auto;

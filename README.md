@@ -28,7 +28,7 @@ It's built with Jekyll, which GitHub Pages runs automatically, so there's nothin
 - **Add or remove companies in the logo strip:** edit the `companies` list at the top of `index.html`. Logos live in `assets/img/logos/` (plum, trimmed, 180px tall). A company without a logo shows its name as text.
 - **Change homepage text:** open `index.html`, find the section comment, edit the words between the tags.
 - **Change your booking link or social links:** edit `_config.yml`.
-- **Rename a menu item:** edit `_includes/header.html` (the blog link is labelled "thonks").
+- **Rename a menu item:** edit `_includes/header.html` (the blog link is labelled "My thoughts").
 - **Swap your headshot:** replace `assets/img/headshot.jpg` with a new photo (portrait, about 800×1000).
 - **Change colours:** edit the hex codes under `:root` in `styles.css`.
 
