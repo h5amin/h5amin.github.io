@@ -53,6 +53,18 @@ description: Selected content work, research reports, launches and talks by Hiba
     <h2 class="section-title on-dark">Speaking</h2>
     <p class="section-intro on-dark">Talks on content, AI and building brands with heart. Want me at your event?</p>
 
+    {% assign photos = site.data.speaking.photos %}
+    {% if photos.size > 0 %}
+    <div class="speaking-gallery">
+      {% for ph in photos %}
+      <figure class="gallery-item gallery-item-{{ forloop.index }}">
+        <img src="{{ '/assets/img/speaking/' | append: ph.file | relative_url }}" alt="{{ ph.alt | escape }}" loading="lazy">
+        <figcaption>{{ ph.caption }}</figcaption>
+      </figure>
+      {% endfor %}
+    </div>
+    {% endif %}
+
     <ul class="talk-list">
       {% for t in site.data.speaking.talks %}
       <li class="talk">

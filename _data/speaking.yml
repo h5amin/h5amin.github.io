@@ -1,8 +1,27 @@
 # Talks and appearances shown on the Work page (/work/#speaking).
 # talks: type (Keynote, Panel, Speaker, Workshop...), event, year, title (optional), url (optional)
 # appearances: podcasts, interviews and features. kind, title, outlet, url
+# photos: the collage at the top of the Speaking section. file (in assets/img/speaking/), caption, alt
+
+photos:
+  - file: socialwest-2025-keynote.webp
+    caption: SocialWest 2025 keynote
+    alt: Hiba on stage giving the keynote at SocialWest 2025
+  - file: toast-summit-panel-stage.webp
+    caption: "Toast Summit: Purpose is Profitable"
+    alt: The Purpose is Profitable panel on stage at Toast Summit, with the four panellists shown on the big screen
+  - file: toast-summit-panel.webp
+    caption: Toast Summit panel
+    alt: Hiba laughing with fellow panellists at Toast Summit
+  - file: atb-amp-leveraging-ai.webp
+    caption: "ATB Amplifier: Leveraging AI"
+    alt: Video call grid from the ATB Amplifier "Leveraging AI" virtual learning session
 
 talks:
+  - type: Panel
+    event: SocialWest
+    year: 2026
+    title: Smarter Marketing for Early-Stage Growth
   - type: Keynote
     event: SocialWest
     year: 2025
