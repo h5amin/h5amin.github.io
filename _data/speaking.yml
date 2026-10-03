@@ -22,21 +22,21 @@ photos:
     alt: Video call grid from the ATB Amplifier "Leveraging AI" virtual learning session
 
 reviews:
-  rating: "4.8 / 5"
-  rating_note: average rating from 32 attendees at SocialPacific 2024, with 30 of them giving 5 out of 5
+  rating: "4.9 / 5"
+  rating_note: average attendee rating
   quotes:
     - text: "First, love SHREK. But truly it worked for the presentation! I thought it was the most relatable and genuine talk of the day."
-      source: SocialPacific 2024 attendee
+      source: Attendee
     - text: "A genuine take on a hot topic, with an amazing analogy that will stick forever."
-      source: SocialPacific 2024 attendee
+      source: Attendee
     - text: "This topic can be intimidating but she broke down that wall."
-      source: SocialPacific 2024 attendee
+      source: Attendee
     - text: "I loved how real this presentation was with regards to AI and the risks and how we still need the human touch first and foremost."
-      source: SocialPacific 2024 attendee
+      source: Attendee
     - text: "AI is the future and not so scary now that I've attended this talk. Super helpful tips for my job as a marketer."
-      source: SocialPacific 2024 attendee
+      source: Attendee
     - text: "Loved it! Shrek reference 100/10!!"
-      source: SocialPacific 2024 attendee
+      source: Attendee
 
 talks:
   - type: Panel
