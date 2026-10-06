@@ -43,7 +43,7 @@ Figuring out how to balance AI's pressure to scale with staying true to creativi
 
 And then it hit me. **The answer was Shrek all along.**
 
-<div class="img-placeholder">Image coming soon: Shrek meme</div>
+{% include image.html src="/assets/img/blog/shrek-fiona-moonlight.webp" alt="Shrek and Fiona smiling at each other in front of a giant full moon over the sea" %}
 
 ---
 
