@@ -4,7 +4,7 @@ description: "AI can't write Shrek. But it can help you make Puss in Boots. A fr
 tags: [AI, Content strategy]
 ---
 
-Every time I open the internet, I ask myself: what the actual *fuck* is going on?
+Every time I open the internet, I ask myself: what the actual *hell* is going on?
 
 Overnight, everyone became an AI expert.
 
